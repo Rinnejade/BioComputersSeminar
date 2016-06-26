@@ -1,0 +1,16 @@
+OX_5772526118({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"https://snapsort-d.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"https://us-u.openx.net/w/1.0/pd?plm=5&ph=1a73c9cb-5945-47eb-8b44-bacc7e8a59f1",
+    "adunits" : [
+      {
+        "auid":"538253589",
+        "chain_revenue":"",
+        "size":"728x90",
+        "chain":[
+        ]
+      }
+    ]
+  }
+});

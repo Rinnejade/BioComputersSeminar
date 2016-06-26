@@ -1,0 +1,70 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{filecontents}
+\begin{filecontents}{abstract.bib}
+@article{id,
+title = {Biologically Relevant Molecular Transducer with Increased Computing Power and Iterative Abilities},
+author = {Tamar Ratner, Ron Piran1, Natasha Jonoska, Ehud Keinan},
+journal = {ScienceDialy},
+year = {2013}
+},
+@book{
+title = {Molecular Electronics: Bio-sensors and Bio-computers},
+author = { Barsanti, L., Evangelista, V., Gualtieri, P., Passarelli, V., Vestri, S. (Eds.)  },
+publisher = {NATO Science Series},
+date = {January 2015}
+},
+@book{ISBN-10: 0412357704,
+title = {Biocomputers},
+author = { T.Kaminuma },
+publisher = {Cengage Learning EMEA},
+date = {Jan 1991}
+},
+@article{
+title = {Tiny Biocomputers Move Closer to Reality},
+author = {Tim Requarth, Greg Wayne},
+journal = {SCIENTIFIC AMERICAN},
+year = {2011}
+},
+@article{
+title = {Biological Computer - Their mechanism and applications},
+author = {T Jeevani},
+journal = {Journal of Biotechnology and Biomaterials},
+year = {2011}
+}, 
+@misc{
+title = {Biological supercomputer uses the 'juice of life'},
+author = {http://www.computerworld.com/article/3040707/computer-hardware/biological-supercomputer-uses-the-juice-of-life.html}
+}
+
+\end{filecontents}
+
+\title{\Huge {\textbf {Awesome Title}}}
+\author{
+  \Large { Vinod Kumar S } \\
+  vinodkumars767.vs@gmail.com \\
+  \small Roll No 62, S7 CSE \\
+  \\
+  \Large {Guide : Vipin Vasu A V}\\
+  vipin@cet.ac.in
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+\nocite{*}
+
+\renewcommand{\abstractname}{\Large Abstract}
+\begin{abstract}
+Biocomputing is one of the upcoming field in the areas of molecularelectronics and nanotechnology. The idea behind blending biology with technology is due to the limitations faced by the semiconductor designers in decreasing the size of the silicon chips, which directly affects the processor speed. Biocomputers consists of biochips unlike the normal computers, which are silicon-based computers. This biochip consists of biomaterial such as nucleic acid, enzymes, etc.
+
+The power of a biocomputer is that it acts as a massively parallel computer and has immense data storage capability.Thus, it can be used to solve NP-complete problems with higher efficiency.The possibilities for bio-computers include developing a credit-card size computer that could design a super-efficient global air-traffic control system. The basic idea behind bio-computing is to use molecular reactions for computational purposes.
+\end{abstract}
+
+\bibliography{abstract}{}
+\bibliographystyle{plain}
+
+\end{document}
