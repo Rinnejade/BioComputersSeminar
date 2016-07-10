@@ -29,10 +29,77 @@
 
 \section{Introduction}
 
-\begin{frame}[fragile]{Metropolis}
-
-   Biological computers have emerged as an interdisciplinary field that drawstogether molecular biology, chemistry, computer science and mathematics. Thehighly predictable hybridization chemistry of DNA, the ability to completelycontrol the length and content of oligonucleotides, and the wealth of enzymesavailable for modification of the DNA, make the use of nucleic acids an attractivecandidate for all of these nanoscale applications.
+\begin{frame}[fragile]{What is DNA ?}
+  \begin{itemize}
+      \item{DNA or deoxyribonucleic acid is made up of molecules called nucleotides.}
+      \item{Each nucleotide contains a phosphate group, a sugar group and a nitrogen base.}
+      \item{The four types of nitrogen bases are adenine (A), thymine (T), guanine (G) and cytosine (C).}
+      \item{The order of these bases is what determines DNA's instructions, or genetic code.}
+      \item{ Bond in pairs
+          \begin{itemize}
+        \item A - T
+                \item C - G 
+      \end{itemize}}
+  \end{itemize}
 \end{frame}
+
+\begin{frame}{DNA Structure}
+  \begin{figure}
+      \includegraphics[width=\textwidth]{dna}   
+  \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{What is BioComputers ?}
+         \begin{itemize}
+      \item{Biocomputers use systems of biologically derived molecules—such as DNA and proteins—to perform computational calculations involving storing, retrieving, and processing data.}
+            \item{These computers use DNA to store information and perform complex calculations. DNA has a vast amount of storage capacity.}
+            \item{ Computers might tap the vast storage capacity that enables DNA to hold the complex blueprints of living organisms.}
+            \item{The storage capacity of a single gram of DNA can hold as much information as one trillion compact discs.}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Can DNA Compute?}
+         \begin{itemize}
+      \item DNA itself doesnot carry out computations
+      \item It rather acts as a massive memory
+            \item But, the way complementary bases react with each other can be used to         compute things
+            \item Proposed by Leonard Adleman - Inventor of Biological Computers in 1994
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Hamiltanion Path Problem}
+  \begin{figure}
+             \includegraphics[width=\textwidth]{hpp} 
+  \end{figure}
+    Determine whether there is a hamiltonian path from Boston to New York
+\end{frame}
+
+\begin{frame}[fragile]{Solving HPP using DNA}
+  \begin{itemize}
+    \item Encode this graph in a DNA
+        \item{  Vertices are assigned a random DNA sequence 
+          \begin{itemize}
+        \item Boston = GCTACG
+        \item San Diego = CTAGTA
+      \end{itemize}}
+         \item{  Edges are formed by concatenating $2^{nd}$ half of the originating city and $1^{st}$ half of the destination city and taking the complement
+          \begin{itemize}
+        \item Boston-San Diego = TGCGAT
+      \end{itemize}}
+            \item Use Polymerase Chain Reaction (PCR) to replicate the DNA with the correct start and end city
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Solving HPP using DNA}
+  \begin{itemize}
+        \item Put one primer on Boston and one on New York
+    \item The right answer is replicated exponentially while wrong paths are replicated linearly or not at all
+         \item Use \textit{gel elecrophoresis} to identify molecules with the right length
+         \item Finally use \textit{affinity seperation} to weed out paths without all the cities
+         \item If any DNA is left in the test tube, it is the Hamiltonian Path 
+  \end{itemize}
+\end{frame}
+
 \begin{frame}[fragile]{Sections}
   Sections group slides of the same topic
 
@@ -44,111 +111,111 @@
 \section{Titleformats}
 
 \begin{frame}{Advantages}
-	\begin{itemize}
-		\item {Performs millions of operations at same time
-        	\begin{itemize}
- 				\item{Good for parallel computing}
- 			\end{itemize}
+  \begin{itemize}
+    \item {Performs millions of operations at same time
+          \begin{itemize}
+        \item{Good for parallel computing}
+      \end{itemize}
             }
         \item {Ability to use large amounts of working memory
-        	\begin{itemize}
- 				\item{1 gram of DNA can hold 1 x 1014 MB of data Or 145 trillion CDs}
+          \begin{itemize}
+        \item{1 gram of DNA can hold 1 x 1014 MB of data Or 145 trillion CDs}
                 \item{1 CD is 800 MB}
- 			\end{itemize}
+      \end{itemize}
             }
        
-		\item {Cheaper}
+    \item {Cheaper}
         \item {Lightweight
-        	\begin{itemize}
- 				\item{1 lb of DNA has more computing power than all computers ever made}
- 			\end{itemize}
+          \begin{itemize}
+        \item{1 lb of DNA has more computing power than all computers ever made}
+      \end{itemize}
             }
-		\item {	Low power used to keep in original state}
-	\end{itemize}
+    \item { Low power used to keep in original state}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Advantages}
-	\begin{itemize}
-		\item {Has ability to solve hardest problems in a matter of weeks}
+  \begin{itemize}
+    \item {Has ability to solve hardest problems in a matter of weeks}
         \item {Environmentally friendly
-        	\begin{itemize}
- 				\item{Clean, readily available materials}
- 			\end{itemize}
+          \begin{itemize}
+        \item{Clean, readily available materials}
+      \end{itemize}
             }
-	\end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Disadvantages}
-	\begin{itemize}
-		\item {Molecular operations are not perfect}
-		\item {DNA computing involves a relatively large amount of error}
-		\item {As size of problem grows, probability of receiving incorrect answer eventually becomes greater than probability of receiving correct answer.}
-		\item {Sometimes there are errors in the pairing of DNA strands}
+  \begin{itemize}
+    \item {Molecular operations are not perfect}
+    \item {DNA computing involves a relatively large amount of error}
+    \item {As size of problem grows, probability of receiving incorrect answer eventually becomes greater than probability of receiving correct answer.}
+    \item {Sometimes there are errors in the pairing of DNA strands}
         \item {Simple problems solved faster on electronic computers}
-	\end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Disadvantages}
-	\begin{itemize}
-		\item {Human assistance is required}
-		\item {No universal method of data representation}
-		\item {Time consuming lab procedures}
+  \begin{itemize}
+    \item {Human assistance is required}
+    \item {No universal method of data representation}
+    \item {Time consuming lab procedures}
         \item {DNA has a half-life
-        	\begin{itemize}
- 				\item{Solutions could dissolve away before end result is found}
- 			\end{itemize}
+          \begin{itemize}
+        \item{Solutions could dissolve away before end result is found}
+      \end{itemize}
             }
         \item {Information can be untransmittable
-        	\begin{itemize}
- 				\item{Current DNA algorithms compute successfully w/o passing any information from one processor to the next in a multiprocessor connection bus.}
- 			\end{itemize}
+          \begin{itemize}
+        \item{Current DNA algorithms compute successfully w/o passing any information from one processor to the next in a multiprocessor connection bus.}
+      \end{itemize}
             }
-	\end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Metropolis titleformats}
-	\themename supports 4 different titleformats:
-	\begin{itemize}
-		\item Regular
-		\item \textsc{Smallcaps}
-		\item \textsc{allsmallcaps}
-		\item ALLCAPS
-	\end{itemize}
-	They can either be set at once for every title type or individually.
+  \themename supports 4 different titleformats:
+  \begin{itemize}
+    \item Regular
+    \item \textsc{Smallcaps}
+    \item \textsc{allsmallcaps}
+    \item ALLCAPS
+  \end{itemize}
+  They can either be set at once for every title type or individually.
 \end{frame}
 
 {
     \metroset{titleformat frame=smallcaps}
 \begin{frame}{Small caps}
-	This frame uses the \texttt{smallcaps} titleformat.
+  This frame uses the \texttt{smallcaps} titleformat.
 
-	\begin{alertblock}{Potential Problems}
-		Be aware, that not every font supports small caps. If for example you typeset your presentation with pdfTeX and the Computer Modern Sans Serif font, every text in smallcaps will be typeset with the Computer Modern Serif font instead.
-	\end{alertblock}
+  \begin{alertblock}{Potential Problems}
+    Be aware, that not every font supports small caps. If for example you typeset your presentation with pdfTeX and the Computer Modern Sans Serif font, every text in smallcaps will be typeset with the Computer Modern Serif font instead.
+  \end{alertblock}
 \end{frame}
 }
 
 {
 \metroset{titleformat frame=allsmallcaps}
 \begin{frame}{All small caps}
-	This frame uses the \texttt{allsmallcaps} titleformat.
+  This frame uses the \texttt{allsmallcaps} titleformat.
 
-	\begin{alertblock}{Potential problems}
-		As this titleformat also uses smallcaps you face the same problems as with the \texttt{smallcaps} titleformat. Additionally this format can cause some other problems. Please refer to the documentation if you consider using it.
+  \begin{alertblock}{Potential problems}
+    As this titleformat also uses smallcaps you face the same problems as with the \texttt{smallcaps} titleformat. Additionally this format can cause some other problems. Please refer to the documentation if you consider using it.
 
-		As a rule of thumb: Just use it for plaintext-only titles.
-	\end{alertblock}
+    As a rule of thumb: Just use it for plaintext-only titles.
+  \end{alertblock}
 \end{frame}
 }
 
 {
 \metroset{titleformat frame=allcaps}
 \begin{frame}{All caps}
-	This frame uses the \texttt{allcaps} titleformat.
+  This frame uses the \texttt{allcaps} titleformat.
 
-	\begin{alertblock}{Potential Problems}
-		This titleformat is not as problematic as the \texttt{allsmallcaps} format, but basically suffers from the same deficiencies. So please have a look at the documentation if you want to use it.
-	\end{alertblock}
+  \begin{alertblock}{Potential Problems}
+    This titleformat is not as problematic as the \texttt{allsmallcaps} format, but basically suffers from the same deficiencies. So please have a look at the documentation if you want to use it.
+  \end{alertblock}
 \end{frame}
 }
 
@@ -208,47 +275,48 @@ or show \textbf{bold} results.\end{verbatim}
     \item And now this
   \end{itemize}
 \end{frame}
-\begin{frame}{Figures}
-  \begin{figure}
-    \newcounter{density}
-    \setcounter{density}{20}
-    \begin{tikzpicture}
-      \def\couleur{alerted text.fg}
-      \path[coordinate] (0,0)  coordinate(A)
-                  ++( 90:5cm) coordinate(B)
-                  ++(0:5cm) coordinate(C)
-                  ++(-90:5cm) coordinate(D);
-      \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- cycle;
-      \foreach \x in {1,...,40}{%
-          \pgfmathsetcounter{density}{\thedensity+20}
-          \setcounter{density}{\thedensity}
-          \path[coordinate] coordinate(X) at (A){};
-          \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
-                              -- (C) coordinate[pos=.10](B)
-                              -- (D) coordinate[pos=.10](C)
-                              -- (X) coordinate[pos=.10](D);
-          \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
-      }
-    \end{tikzpicture}
-    \caption{Rotated square from
-    \href{http://www.texample.net/tikz/examples/rotated-polygons/}{texample.net}.}
-  \end{figure}
+\begin{frame}{Similarities between Conventional and BioComputers}
+  \begin{itemize}
+        \item {Transformation of Data
+          \begin{itemize}
+        \item Both DNA computers and electronic computers use Boolean logic (AND, OR, NAND, NOR) to transform data.
+                \item The logical command "AND" is performed by separating DNA strands according to their sequences, and the command "OR" is done by pouring together DNA solutions containing specific sequences.
+      \end{itemize}
+            }
+             \item {Manipulation of Data
+          \begin{itemize}
+        \item Electronic computers and DNA computers both store information in strings, which are manipulated to do processes. 
+      \end{itemize}
+            }
+            \item {Computation Ability
+              \begin{itemize}
+          \item All computers manipulate data by addition and subtraction. 
+                    \item A DNA computer should be able to solve a satisfiability problem with 70 variables and 1,000 AND-OR connections. 
+        \end{itemize}
+            }
+  \end{itemize}
 \end{frame}
-\begin{frame}{Tables}
+\begin{frame}{Differences between Conventional and BioComputers}
   \begin{table}
-    \caption{Largest cities in the world (source: Wikipedia)}
+%     \caption{Largest cities in the world (source: Wikipedia)}
     \begin{tabular}{lr}
       \toprule
-      City & Population\\
+      Conventional & BioComputers \\
       \midrule
-      Mexico City & 20,116,842\\
-      Shanghai & 19,210,000\\
-      Peking & 15,796,450\\
-      Istanbul & 14,160,467\\
+      Inorganic eg.Silicon & Biological eg.DNA \\ \\
+      Sequential and limited &  Massively parallel\\
+      massively parallel & \\ \\
+      Size about 1 square  &  First DNA computer\\
+      foot for the desktop & was 100 micro liters\\ \\
+      $10^{12}$ op.s per sec. & $10^{14}$ op.s per sec.\\
+    Uses Base2 to represent data & Uses Base4 \\ \\
+      Not Energy efficient & Enegry efficient \\ \\
+      Produces toxic components & No toxic components\\ 
       \bottomrule
     \end{tabular}
   \end{table}
 \end{frame}
+
 \begin{frame}{Blocks}
   Three different block environments are pre-defined and may be styled with an
   optional background color.
