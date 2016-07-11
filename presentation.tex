@@ -100,15 +100,104 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Sections}
-  Sections group slides of the same topic
-
-  \begin{verbatim}    \section{Elements}\end{verbatim}
-
-  for which \themename provides a nice progress indicator \ldots
+\section{Bio Computers}
+\begin{frame}[fragile]{DNA Data Storage}
+\begin{itemize}
+  \item DNA is a good storage medium because data can be written into molecules more densely than the basic elements of conventional storage technologies can pack it in
+    \item IDC predicts that the worldwide total of stored digital data will hit 16 trillion gigabytes next year, most of it housed in huge data centers
+    \item It is estimated that a shoebox worth of DNA could hold the equivalent of roughly 100 giant data centers
+    \item DNA can also be remarkably durable, particularly when kept cool and dry
+\end{itemize}
 \end{frame}
 
-\section{Titleformats}
+ \begin{frame}[fragile]{DNA Data Storage}
+  \begin{figure}
+        \includegraphics[width=0.8\textwidth]{dna-storage} 
+  \end{figure}
+    The pink smear in this test tube is DNA that has been synthesized to store digital data for long-term storage. Microsoft used the same technique to store roughly 200 megabytes of data
+\end{frame}
+
+\begin{frame}[fragile]{DNA Data Storage System - Write Operation}
+   \begin{itemize}
+    \item Storing data in DNA requires translating the 1s and 0s of binary digital files into long strings of the four different nucleotides, or bases, that make up DNA strands and write out the genetic code
+  \end{itemize}
+  \begin{figure}
+        \includegraphics[width=\textwidth]{write} 
+  \end{figure}
+    The write process performs put(key, value), generating a DNA library.
+\end{frame}
+
+\begin{frame}[fragile]{DNA Data Storage System - Read Operation}
+  \begin{figure}
+        \includegraphics[width=\textwidth]{read} 
+  \end{figure}
+   The read process performs get(key) on a DNA library, returning the value
+\end{frame}
+
+\begin{frame}[fragile]{Transcriptor - Biological transistor }
+  \begin{itemize} 
+  
+  \item Biological transistor the “transcriptor" is made from genetic material — DNA and RNA 
+  \item  A transcriptor controls the flow of a specific protein, RNA polymerase, as it travels along a strand of DNA
+  \item The creation of the transcriptor allows engineers to compute inside living cells to record
+  \item Using transcriptors, logic gates can be created that can derive true-false answers to virtually any biochemical question that might be posed within a cell
+  \item Transcriptor-based logic gates as “Boolean Integrase Logic,” or “BIL gates” for short
+  
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Transcriptor - Biological transistor }
+  \begin{itemize} 
+  \item The BIL gates can test whether a given cell had been exposed to any number of external stimuli — the presence of glucose and caffeine, for instance
+  \item BIL gates can then tell the cell to start or stop reproducing if certain factors were present
+  \item  By coupling BIL gates with the team’s biological Internet, it is possible to communicate genetic information from cell to cell to orchestrate the behavior of a group of cells
+  \item The BIL gates also provide signal amplification
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Similarities between Conventional and Bio Computers}
+  \begin{itemize}
+        \item {Transformation of Data
+          \begin{itemize}
+        \item Both DNA computers and electronic computers use Boolean logic (AND, OR, NAND, NOR) to transform data.
+                \item The logical command "AND" is performed by separating DNA strands according to their sequences, and the command "OR" is done by pouring together DNA solutions containing specific sequences.
+      \end{itemize}
+            }
+             \item {Manipulation of Data
+          \begin{itemize}
+        \item Electronic computers and DNA computers both store information in strings, which are manipulated to do processes. 
+      \end{itemize}
+            }
+            \item {Computation Ability
+              \begin{itemize}
+          \item All computers manipulate data by addition and subtraction. 
+                    \item A DNA computer should be able to solve a satisfiability problem with 70 variables and 1,000 AND-OR connections. 
+        \end{itemize}
+            }
+  \end{itemize}
+\end{frame}
+\begin{frame}{Differences between Conventional and BioComputers}
+  \begin{table}
+%     \caption{Largest cities in the world (source: Wikipedia)}
+    \begin{tabular}{lr}
+      \toprule
+      Conventional & BioComputers \\
+      \midrule
+      Inorganic eg.Silicon & Biological eg.DNA \\ \\
+      Sequential and limited &  Massively parallel\\
+      massively parallel & \\ \\
+      Size about 1 square  &  First DNA computer\\
+      foot for the desktop & was 100 micro liters\\ \\
+      $10^{12}$ op.s per sec. & $10^{14}$ op.s per sec.\\
+    Uses Base2 to represent data & Uses Base4 \\ \\
+      Not Energy efficient & Enegry efficient \\ \\
+      Produces toxic components & No toxic components\\ 
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\section{Advantages and Disadvantages}
 
 \begin{frame}{Advantages}
   \begin{itemize}
@@ -275,47 +364,7 @@ or show \textbf{bold} results.\end{verbatim}
     \item And now this
   \end{itemize}
 \end{frame}
-\begin{frame}{Similarities between Conventional and BioComputers}
-  \begin{itemize}
-        \item {Transformation of Data
-          \begin{itemize}
-        \item Both DNA computers and electronic computers use Boolean logic (AND, OR, NAND, NOR) to transform data.
-                \item The logical command "AND" is performed by separating DNA strands according to their sequences, and the command "OR" is done by pouring together DNA solutions containing specific sequences.
-      \end{itemize}
-            }
-             \item {Manipulation of Data
-          \begin{itemize}
-        \item Electronic computers and DNA computers both store information in strings, which are manipulated to do processes. 
-      \end{itemize}
-            }
-            \item {Computation Ability
-              \begin{itemize}
-          \item All computers manipulate data by addition and subtraction. 
-                    \item A DNA computer should be able to solve a satisfiability problem with 70 variables and 1,000 AND-OR connections. 
-        \end{itemize}
-            }
-  \end{itemize}
-\end{frame}
-\begin{frame}{Differences between Conventional and BioComputers}
-  \begin{table}
-%     \caption{Largest cities in the world (source: Wikipedia)}
-    \begin{tabular}{lr}
-      \toprule
-      Conventional & BioComputers \\
-      \midrule
-      Inorganic eg.Silicon & Biological eg.DNA \\ \\
-      Sequential and limited &  Massively parallel\\
-      massively parallel & \\ \\
-      Size about 1 square  &  First DNA computer\\
-      foot for the desktop & was 100 micro liters\\ \\
-      $10^{12}$ op.s per sec. & $10^{14}$ op.s per sec.\\
-    Uses Base2 to represent data & Uses Base4 \\ \\
-      Not Energy efficient & Enegry efficient \\ \\
-      Produces toxic components & No toxic components\\ 
-      \bottomrule
-    \end{tabular}
-  \end{table}
-\end{frame}
+
 
 \begin{frame}{Blocks}
   Three different block environments are pre-defined and may be styled with an
