@@ -1,42 +1,153 @@
-\documentclass[a4paper]{article}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[23pt]{article}
+\usepackage[margin=1in, paperwidth=21cm, paperheight=29.7cm]{geometry}
+\usepackage[pdftex]{color,graphicx}
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
-\usepackage{tabu}
-\usepackage{acro}
-% \usepackage{mathtools}
-% \usepackage[T1]{fontenc}
-% \usepackage{textcomp}
-\usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
-
-
+\usepackage{cite}
+\usepackage{listings}
+\usepackage[nodayofweek]{datetime}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{tabu}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \newcommand{\abbrlabel}[1]{\makebox[5cm][l]{\textbf{#1}\ \dotfill}}
 \newenvironment{abbreviations}{\begin{list}{}{\renewcommand{\makelabel}{\abbrlabel}}}{\end{list}}
-% \usepackage[acronym]{glossaries}
-
-% abbreviations:
-% \newacronym{ny}{NY}{New York}
-% \newacronym{la}{LA}{Los Angeles}
-% \newacronym{un}{UN}{United Nations}
-
-\title{Bio Computers}
-
-\author{Vinod Kumar S}
-
-\date{\today}
-\newpage
-
-% \makeglossaries
-
 \begin{document}
+\nocite{*}
+\pagenumbering{roman}
+\title{\begin{center}
+\bf SEMINAR REPORT\\
+\vspace{0.5cm} On\\
+\HRule \\[0.4cm]
+{ \huge \bfseries Bio Computers}\\[0.4cm] % Title of your document
+\HRule \\[0.4 cm]
+\vspace{0.5cm} \begin{Large} Submitted by:\\ 
+\vspace{.35cm}Vinod Kumar S (13400061)
+\end{Large}
+\end{center}}
+\vspace{.5cm}
+\date{}
 
 \maketitle
+\begin{center}
+ {\it\large for the award of the degree}
+\end{center}
+\begin{center}
+ {\it\large of}
+\end{center}
+\begin{center}
+ {\bf\Large Bachelor of Technology}
+\end{center}
 
-\tableofcontents
+\begin{center}
+\includegraphics[scale=.8]{images/logo.jpg}
+\end{center}
+\vspace{.28cm}
+
+\begin{center}
+{\bf\large DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}
+
+\vspace{.35cm}
+{\bf\large COLLEGE OF ENGINEERING\ , TRIVANDRUM}
+\begin{center}{\large \formatdate{19}{7}{2016}}\\[1cm]\end{center}
+\end{center}
+
 \newpage
 
+\begin{center}
+{\bf{\LARGE CERTIFICATE}}
+\end{center}
+\vspace{.1cm}
+\begin{center}
+\includegraphics[scale=.45]{images/logo.jpg}
+\end{center}
+\begin{center}
+\textbf{\Large College of Engineering,
+Trivandrum}
+\end{center}
+
+\vspace{.6cm}
+\begin{Large}
+\begin{spacing}{1.5}
+\hspace{1.5cm} This  is  to certify that the seminar entitled {\bf Bio Computers} done by {\bf  Vinod Kumar S (13400061)} of the {\bf Department of Computer Science and Engineering, College of Engineering, Trivandrum} in partial fulfillment of the requirements for the award of the degree of Bachelor of Technology in Computer Science and Engineering under Kerala University is a Bonafide record of work carried out by him.
+\vspace{2cm}
+\end{spacing}
+
+\bf\Large \hspace{.3cm}\hspace{1.7cm} \hspace{3cm} \\
+\bf\Large \hspace{1cm}Seminar Co-ordinator    \hspace{4cm} Head of Department
+
+\vspace{2cm}
+\begin{spacing}{1.4}
+\noindent Place : Trivandrum
+
+\noindent Date \ : \formatdate{25}{7}{2016}
+\end{spacing}
+\end{Large}
+
+\newpage
+\pagenumbering{roman}
+\begin{center}
+\bf{{\LARGE ACKNOWLEDGEMENT}}
+\end{center}
+\begin{Large}
+\begin{spacing}{1.1}
+\vspace{1cm}
+\hspace{2cm}
+It is with great enthusiasm and spirit I am bringing out this seminar report. First of all I thank the God Almighty for His grace and mercy that enabled me in the finalization of this seminar.
+
+\hspace{2cm} 
+I am greatly obliged to Dr. Abdul Nizar, Head Of the Department of Computer Science,  College of Engineering, Trivandrum, for his encouragement and support. I am immensely indebted to our seminar coordinators Mr. Vipin Vasu A. V. and Mr. Sreelal S. , for their constructive criticisms, guidance and advices. I, on this occasion, remember the valuable suggestions and prayers offered by my family members and friends which were inevitable for the successful completion of my seminar.
+\end{spacing}
+\end{Large}
+\newpage
+\begin{center}{\bf{\LARGE ABSTRACT}}
+\end{center}
+\begin{Large}
+\begin{spacing}{1.1}
+Biocomputing is one of the upcoming field in the areas of molecularelectronics and nanotechnology. The idea behind blending biology with technology is due to the limitations faced by the semiconductor designers in decreasing the size of the silicon chips, which directly affects the processor speed. Biocomputers consists of biochips unlike the normal computers, which are silicon-based computers. This biochip consists of biomaterial such as nucleic acid, enzymes, etc.
+
+The power of a biocomputer is that it acts as a massively parallel computer and has immense data storage capability. Thus, it can be used to solve NP-complete problems with higher efficiency. The possibilities for biocomputers include developing a credit card size computer that could design a super-efficient global air-traffic control system. The basic idea behind biocomputing is to use molecular reactions for computational purposes.
+\end{spacing}
+\end{Large}
+
+\newpage
+\tableofcontents
 \listoffigures
 \newpage
 
@@ -51,19 +162,14 @@
 
 \end{abbreviations}
 \newpage
-
-\begin{abstract}
-Biocomputing is one of the upcoming field in the areas of molecularelectronics and nanotechnology. The idea behind blending biology with technology is due to the limitations faced by the semiconductor designers in decreasing the size of the silicon chips, which directly affects the processor speed. Biocomputers consists of biochips unlike the normal computers, which are silicon-based computers. This biochip consists of biomaterial such as nucleic acid, enzymes, etc.
-
-The power of a biocomputer is that it acts as a massively parallel computer and has immense data storage capability. Thus, it can be used to solve NP-complete problems with higher efficiency. The possibilities for bio-computers include developing a credit-card size computer that could design a super-efficient global air-traffic control system. The basic idea behind bio-computing is to use molecular reactions for computational purposes.
-\end{abstract}
-
+\renewcommand{\abstractname}{\Large Abstract}
+	
 \newpage
-
+\pagenumbering{arabic}
 \section{Introduction}
 \label{sec:introduction}
 
-Biocomputers use systems of biologically derived molecules- such as DNA and proteins-to perform computational calculations involving storing, retrieving and processing data.
+Biocomputers use systems of biologically derived molecules- such as DNA and proteins to perform computational calculations involving storing, retrieving and processing data.
 
 DNA  (Deoxyribo Nucleic  Acid)  computing,  also  known  as  molecular 
 computing is a new approach to massively parallel computation based on 
@@ -88,19 +194,19 @@ follows: Adenine (A), guanine (G), Cytosine (C) and Thymine (T): they are typica
 
 DNA performs two major functions:
   \begin{itemize}
-    \item self replication 
-        \item codes for production of proteins
+    \item self replication.
+        \item codes for production of proteins.
   \end{itemize}
 Each deoxyribonucleotide consists of 3 components:
   \begin{itemize}
 
-  \item {a sugar — deoxyribose
+  \item {a sugar — deoxyribose.
       \begin{itemize}
-      \item five carbon atoms: 1' to 5' 
-      \item hydroxyl group (OH) attached to 3' carbon
+      \item five carbon atoms: 1' to 5'.
+      \item hydroxyl group (OH) attached to 3' carbon.
     \end{itemize}}
-  \item a phosphate group
-  \item a nitrogenous base
+  \item a phosphate group.
+  \item a nitrogenous base.
 \end{itemize}
 
 % \begin{figure}
@@ -110,19 +216,17 @@ Each deoxyribonucleotide consists of 3 components:
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\textwidth]{dnaBases}
+  \includegraphics[width=0.8\textwidth]{images/dnaBases}
   \caption{DNA Bases}
 \end{figure}
 
 The chemical structure of deoxyribonucleic acid consists of a specific bond of 2 linear sequences of bases. This bond follows a property of Complementarity: adenine bonds with T (A-T) and vice-verse (T-A), cytosine bonds with G (C-G) and vice-verse (G-C). This is called Watson-Crick complementarity.
 % new line
-\\ \\ \\ 
-
 The four nucleotides adenine (A), guanine (G), cytosine (C) and thymine (T) compose a strand of DNA. The polarity of DNA strands is determined by its two different ends: the 3’end, and the 5’end. The double helix is an anti-parallel (two strands of opposite polarity) bonding of two complementary strands.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=\textwidth]{dna}
+  \includegraphics[width=\textwidth]{images/dna}
   \caption{DNA Structure}
 \end{figure}
  
@@ -148,29 +252,28 @@ DNA computation are based on various combinations of the following primitive bio
         \item \textbf{Detecting and Reading}- given the contents of a tube, say ``yes'' if it contains at least one DNA strand, and ``no'' otherwise. PCR may be used  to  amplify  the  result  and  then  a  process  called \textbf{sequencing} used to actually read the solution. 
   \end{itemize}
     
-    In short, the DNA computer encodes the problem to be solved in the DNA using the four values A, T, C, G.The solution to a problem is obtained as a DNA strand.
+    In short, the DNA computer encodes the problem to be solved in the DNA using the four values A, T, C, G. The solution to a problem is obtained as a DNA strand.
     
-    Every  possible  sequence  can  be  chemically  created  in  a  test  tube  on trillions  of different  DNA strands,  and  the  correct  sequences  can  be filtered out using genetic engineering tools.
+    Every  possible  sequence  can  be  chemically  created  in  a  test  tube  on trillions  of different  DNA strands and  the  correct  sequences  can  be filtered out using genetic engineering tools.
     
 \subsection{DNA Computing Example - The Hamiltonion Path Problem}
 
 In  1994  Leonard  M.  Adleman showed  how  to  solve  the  Hamilton  Path Problem, using DNA computation.
 \\ \\
 \textbf{Hamiltonion Path Problem:}
-\\ \\
 
 A directed graph G with designated nodes \textit{start} and \textit{end} is said to have a Hamiltonian  path  if  and  only  if  there  exists  a  sequence  of  compatible one-way  edges e1,e2,  ...en that  begins  at \textit{start},  ends  at \textit{end} and  enters every  other  node  exactly  once.  A  simplified  version  of  this  problem, known  as  the  traveling  salesman  problem,  poses  the  following  question: given  an  arbitrary  collection  of  cities  through  which  a  salesman  must travel, what is the shortest route linking those cities?
 
 This problem is difficult for conventional computers to solve because it is a  ”non-deterministic  polynomial  time  problem”.  These  problems,  when the  instance  size  is  large,  are  intractable  with  conventional  computers, but   can   be   solved   using   massively   parallel   computers   like   DNA computers.     NP     problems     are     intractable     with     deterministic (conventional/serial)   computers,   but   can   be   solved   using   non-deterministic (massively parallel) computers. A DNA computer is a type of non-deterministic  computer.  The  Hamiltonian  Path  problem  was  chosen by Adleman because it is known as ”NP-complete”.
   \begin{figure}[h!]
     \centering
-      \includegraphics[width=\textwidth]{graphHPP}
+      \includegraphics[width=\textwidth]{images/graphHPP}
       \caption{Directed graph with node 4 as source(start) and node 1 as destination node(end)}
   \end{figure}
     \\ \\ \\
   \begin{figure}
       \centering
-      \includegraphics[width=\textwidth]{hpp_converted}
+      \includegraphics[width=\textwidth]{images/hpp_converted}
       \caption{Simplified Graph - Hamiltonion Path is Atlanta-Boston-Chicago-Detroit}
   \end{figure}
 \textbf{Adleman's Algorithm}
@@ -188,18 +291,18 @@ This problem is difficult for conventional computers to solve because it is a  �
 \\
 \begin{figure}[h!]
     \centering
-      \includegraphics[width=0.7\textwidth]{table}
+      \includegraphics[width=0.7\textwidth]{images/table}
       \caption{DNA for vertices and edges}
   \end{figure}
 \hspace{-4.1pt}\textbf{Step 4:} For each of the n vertices v:
 \begin{itemize}
   \item reject all paths that do not involve v.
 \end{itemize}
-\textbf{Output:}YES, if any path remains; NO, otherwise.
+\textbf{Output:} YES, if any path remains; NO, otherwise.
 \\ \\ 
 \textbf{For step 1}, each node of the graph is encoded into a random 20-base strand of DNA. Then, for each edge of the graph, a different 20-base  oligonucleotide  was  generated  that  contains  the  second  half  of  the source code plus the first half of the target node.
 \\
-\textbf{To implement step 2}, the product of step 1 was amplified by PCR using oligonucleotide  primers  representing start and end  and  ligase  enzyme. This  amplified  and  thus  retained  only  those  molecules  encoding  paths that  begin  with start and  end  with end. 1014  computations  are  carried out in a single second.
+\textbf{To implement step 2}, the product of step 1 was amplified by PCR using oligonucleotide  primers  representing start and end  and  ligase  enzyme. This  amplified  and  thus  retained  only  those  molecules  encoding  paths that  begin  with start and  end  with end. 10\textsuperscript{14} computations  are  carried out in a single second.
 \\
 \textbf{For   implementing   step   3}, gel   electrophoresis   is used for the  separation and recovery of DNA strands of the correct length. The desired path, if it exists, would pass through all four nodes, each of which was assigned a length of 20 bases.
 \\
@@ -221,39 +324,39 @@ and converts them back into digital data. Figure \ref{fig:system-overview} shows
 
 The basic unit of DNA storage is a DNA strand that is roughly 100-200 nucleotides long, capable of storing 50-100
 bits total. Therefore, a typical data object maps to a very large number of DNA strands. The DNA strands will be stored in
-“pools” that have stochastic spatial organization and do not permit structured addressing, unlike electronic storage media. Therefore, it is necessary to embed the address itself into the data stored in a strand. This way, after sequencing, one can reassemble the original data value.
+``pools'' that have stochastic spatial organization and do not permit structured addressing, unlike electronic storage media. Therefore, it is necessary to embed the address itself into the data stored in a strand. This way, after sequencing, one can reassemble the original data value.
 \\ \\
 \begin{figure}[h!]
     \centering
-      \includegraphics[width=0.7\textwidth]{system-overview}
+      \includegraphics[width=0.7\textwidth]{images/system-overview}
       \caption{DNA Storage System Overview}
       \label{fig:system-overview}
   \end{figure}
 \\
-A storage system needs a way to assign identification tags to data objects so they can be retrieved later. A simple key-value architecture is used, where a \textit{put(key, value)} operation associates value with key, and a \textit{get(key)} operation retrieves the value assigned to key. To implement a key-value interface in a DNA storage system, there is :(1) a function that maps a key to the DNA pool (in the library) where the strands that contain data reside; and (2) a mechanism to selectively retrieve only desired portions of a pool (i.e, random access), since the DNA container will likely store significantly more data than the desired object.
+A storage system needs a way to assign identification tags to data objects so they can be retrieved later. A simple key-value architecture is used, where a \textit{put(key, value)} operation associates value with key, and a \textit{get(key)} operation retrieves the value assigned to key. To implement a key-value interface in a DNA storage system, there is : (1) a function that maps a key to the DNA pool (in the library) where the strands that contain data reside; and (2) a mechanism to selectively retrieve only desired portions of a pool (i.e, random access), since the DNA container will likely store significantly more data than the desired object.
 
 Random access is implemented by mapping a key to a pair of PCR primers. At write time, those primers are added to the strands. At read time, those same primers are used in PCR to amplify only the strands with the desired keys. 
 
 \begin{figure}[h!]
     \centering
-      \includegraphics[width=1.1\textwidth]{write}
+      \includegraphics[width=1.1\textwidth]{images/write}
       \caption{DNA Storage System Write}
       \label{fig:write}
   \end{figure}
   \begin{figure}[h!]
     \centering
-      \includegraphics[width=1.1\textwidth]{read}
+      \includegraphics[width=1.1\textwidth]{images/read}
       \caption{DNA Storage System Read}
       \label{fig:read}
   \end{figure}
 
- Figure \ref{fig:write} shows flowcharts for the write (put) and Figure \ref{fig:read} read(get) processes in more detail. The write process (Fig. \ref{fig:write}) takes as input the key and value to store. It uses the key to obtain the PCR primer sequences, compute the high part of the address, and to determine the pool in the DNA library where the resulting strands will be stored. The low part of the address indexes the multiple strands generated by chunking the value (see Sec. 4.2). Next, it encodes the data addresses, payloads and error detection codes, and attaches the primer target sequences, to produce final DNA sequences for the synthesizer to manufacture. The resulting DNA molecules are stored in the storage library for archival.
+ Figure \ref{fig:write} shows flowcharts for the write (put) and Figure \ref{fig:read} read (get) processes in more detail. The write process (Fig. \ref{fig:write}) takes as input the key and value to store. It uses the key to obtain the PCR primer sequences, compute the high part of the address, and to determine the pool in the DNA library where the resulting strands will be stored. The low part of the address indexes the multiple strands generated by chunking the value (see Sec. 4.2). Next, it encodes the data addresses, payloads and error detection codes, and attaches the primer target sequences, to produce final DNA sequences for the synthesizer to manufacture. The resulting DNA molecules are stored in the storage library for archival.
 
  The read process (Fig. \ref{fig:read}) takes as input a key. It uses the key to obtain the PCR primer sequences that identify molecules in the pool associated with that key. Next, the storage system physically extracts a sample from the DNA pool that contains the stored data, but likely also includes large amounts of unrelated data. The sample and the PCR primers are sent to the PCR thermocycler, which amplifies only the desired strands. The resulting pool goes to the DNA sequencer, which ultimately produces the digital data readout. Note that this process might be iterative since it may require multiple samples and sequencing steps to extract all the data associated with the desired keys. The DNA synthesizer is used for both producing the DNA strands that hold data payload as well as synthesizing the PCR primers used to amplify data during the random access read process.
 
 The read process removes a sample of DNA from the pool,and so cumulative reads reduce the quantity of DNA available for future operations. But DNA is easy to replicate, and so the pools can easily be replenished after read operations if necessary. If successive amplification is problematic, a pool can also be completely resynthesized after a read operation.
 
-Researchers at Microsoft and the University of Washington have reached an early but important milestone in DNA storage by storing a record 200 megabytes of data on the molecular strands. The impressive part is not just how much data they were able to encode onto synthetic DNA and then decode. It’s also the space they were able to store it in. Once encoded, the data occupied a spot in a test tube “much smaller than the tip of a pencil,”
+Researchers at Microsoft and the University of Washington have reached an early but important milestone in DNA storage by storing a record 200 megabytes of data on the molecular strands. The impressive part is not just how much data they were able to encode onto synthetic DNA and then decode. It’s also the space they were able to store it in. Once encoded, the data occupied a spot in a test tube “much smaller than the tip of a pencil.”
 \subsection{Cell to Cell Communication}
 
 Many viruses are capable of packaging and transmitting non-viral genetic material. For example, “transvestite” bacteriophage lambda particles can package and transduce phage T7 genomes or other genetic material. However, phage lambda and many viruses actively destroy the host cell in releasing virus particles.
@@ -325,29 +428,29 @@ In electronics, a transistor controls the flow of electrons along a circuit. Sim
 \textbf{Advantages}
 
 \begin{itemize}
-    \item {Performs millions of operations at same time
+    \item {Performs millions of operations at same time.
           \begin{itemize}
-        \item{Good for parallel computing}
+        \item{Good for parallel computing.}
       \end{itemize}
             }
-        \item {Ability to use large amounts of working memory
+        \item {Ability to use large amounts of working memory.
           \begin{itemize}
-        \item{1 gram of DNA can hold 1 x 1014 MB of data Or 145 trillion CDs}
-                \item{1 CD is 800 MB}
+        \item{1 gram of DNA can hold 1 x 1014 MB of data Or 145 trillion CDs.}
+                \item{1 CD is 800 MB.}
       \end{itemize}
             }
        
-    \item {Cheaper}
-        \item {Lightweight
+    \item {Cheaper.}
+        \item {Lightweight.
           \begin{itemize}
-        \item{1 lb of DNA has more computing power than all computers ever made}
+        \item{1 lb of DNA has more computing power than all computers ever made.}
       \end{itemize}
             }
-    \item { Low power used to keep in original state}
-    \item {Has ability to solve hardest problems in a matter of weeks}
-        \item {Environmentally friendly
+    \item { Low power used to keep in original state.}
+    \item {Has ability to solve hardest problems in a matter of weeks.}
+        \item {Environmentally friendly.
           \begin{itemize}
-        \item{Clean, readily available materials}
+        \item{Clean, readily available materials.}
       \end{itemize}}
   \end{itemize}
 
@@ -356,20 +459,20 @@ In electronics, a transistor controls the flow of electrons along a circuit. Sim
   \textbf{Disadvantages}
 
     \begin{itemize}
-    \item {Molecular operations are not perfect}
-    \item {DNA computing involves a relatively large amount of error}
+    \item {Molecular operations are not perfect.}
+    \item {DNA computing involves a relatively large amount of error.}
     \item {As size of problem grows, probability of receiving incorrect answer eventually becomes greater than probability of receiving correct answer.}
-    \item {Sometimes there are errors in the pairing of DNA strands}
-        \item {Simple problems solved faster on electronic computers}
-    \item {Human assistance is required}
-    \item {No universal method of data representation}
-    \item {Time consuming lab procedures}
-        \item {DNA has a half-life
+    \item {Sometimes there are errors in the pairing of DNA strands.}
+        \item {Simple problems solved faster on electronic computers.}
+    \item {Human assistance is required.}
+    \item {No universal method of data representation.}
+    \item {Time consuming lab procedures.}
+        \item {DNA has a half-life.
           \begin{itemize}
-        \item{Solutions could dissolve away before end result is found}
+        \item{Solutions could dissolve away before end result is found.}
       \end{itemize}
             }
-        \item {Information can be untransmittable
+        \item {Information can be untransmittable.
           \begin{itemize}
         \item{Current DNA algorithms compute successfully without passing any information from one processor to the next in a multiprocessor connection bus.}
       \end{itemize}
@@ -380,7 +483,7 @@ In electronics, a transistor controls the flow of electrons along a circuit. Sim
 
 \subsection{Medical Application}
 
-Biological computers are made inside a patient’s body. The mere information of the patient’s body is called a blueprint along which lines the biological computer would be manufactured. Once the computer’s genetic blueprint has been provided, the human body will start to build it on its own using the body’s natural biological processes  and the cells found in the body. Through boolean logic equations, we can easily use the biological computer to identify all types of cellular  activity and determine whether a particular activity is harmful or not. The cellular activities that the biological computer could detect can even include those of mutated genes and all other activities of the genes found in cells. As with conventional computers, the biological computer also works with an output and an input signal. The main inputs of the biological computer are the body’s proteins, RNA and other specific chemicals that are found in the human cytoplasm . The output on the other hand could be detected using laboratory equipment.
+Biological computers are made inside a patient’s body. The mere information of the patient’s body is called a blueprint along which lines the biological computer would be manufactured. Once the computer’s genetic blueprint has been provided, the human body will start to build it on its own using the body’s natural biological processes  and the cells found in the body. Through boolean logic equations, we can easily use the biological computer to identify all types of cellular  activity and determine whether a particular activity is harmful or not. The cellular activities that the biological computer could detect can even include those of mutated genes and all other activities of the genes found in cells. As with conventional computers, the biological computer also works with an output and an input signal. The main inputs of the biological computer are the body’s proteins, RNA and other specific chemicals that are found in the human cytoplasm. The output on the other hand could be detected using laboratory equipment.
 
 \subsection{Solving NP-Problems} % (fold)
 \label{sub:subsection_name}
@@ -407,21 +510,30 @@ Implanting computer programs into living creatures may not be far away. In the p
 \begin{thebibliography}{9}
   \bibitem{nano3}
   Leonard  M.  Adleman, 
-  \emph{Computing  with  DNA}.
-    Scientific  American, August 1998
+  ``Computing  with  DNA,''
+    \emph{Scientific  American, August 1998.}
   
   \bibitem{nano3}
   T Jeevani, 
-  \emph{Biological computer - their mechanism and applications}.
-  Journal of Biotechnology and Biomaterials, 2011.
+  ``Biological computer - their mechanism and applications,'' 
+  \emph{Journal of Biotechnology and Biomaterials, 2011.}
     \bibitem{nano3}
-  L.Adleman.  On  constructing  a  molecular  computer.  1st  DIMACS  workshop  on  DNA  based  computers,  Princeton,  1995.  In  DIMACS series, vol.27 (1996)
+  L.Adleman, ``On  constructing  a  molecular  computer,'' 
+  \emph{1st  DIMACS  workshop  on  DNA  based  computers,  Princeton,  1995.  In  DIMACS series, vol.27, 1996.}
 \bibitem{nano3}
-  Monica E Ortiz and Drew Endy
-  \emph{Engineered cell-cell communication via DNA messaging}.
-  Journal of Biological Engineering,2012
+  Monica E Ortiz and Drew Endy,
+  ``Engineered cell-cell communication via DNA messaging,''
+  \emph{Journal of Biological Engineering, 2012.}
 \bibitem{nano3}
-Stanford creates biological transistors, the final step towards computers inside living cells
+  Robert T. Gonzalez, 
+  ``This new discovery will finally allow us to build biological computers,''
+  \emph{IO9. Retrieved March 29, 2013.}
+\bibitem{nano3}
+  Braich, Ravinderjit S. ,
+  ``Solution of a satisfiability problem on a gel-based DNA computer,''
+  \emph{DNA Computing. Springer Berlin Heidelberg, 2001.}
+ \bibitem{nano3}
+	Stanford creates biological transistors, the final step towards computers inside living cells.
   \emph{http://www.extremetech.com}
-\end{thebibliography}
+\end{thebibliography}  
 \end{document}

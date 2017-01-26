@@ -1,0 +1,17 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}DNA Computing}{1}
+\contentsline {subsection}{\numberline {2.1}DNA Fundamentals}{1}
+\contentsline {subsection}{\numberline {2.2}Basic Operations on DNA}{1}
+\contentsline {subsection}{\numberline {2.3}DNA Computing Example - The Hamiltonion Path Problem}{3}
+\contentsline {section}{\numberline {3}Bio Computers}{6}
+\contentsline {subsection}{\numberline {3.1}DNA Data Storage}{6}
+\contentsline {subsection}{\numberline {3.2}Cell to Cell Communication}{7}
+\contentsline {subsection}{\numberline {3.3}Transcriptor - Biological Transistor}{7}
+\contentsline {section}{\numberline {4}Comparison with Conventional Computers}{8}
+\contentsline {section}{\numberline {5}Advantages and Disadvnatages of bio compters}{9}
+\contentsline {section}{\numberline {6}Applications}{10}
+\contentsline {subsection}{\numberline {6.1}Medical Application}{10}
+\contentsline {subsection}{\numberline {6.2}Solving NP-Problems}{10}
+\contentsline {subsection}{\numberline {6.3}Cryptography}{10}
+\contentsline {section}{\numberline {7}Conclusion}{12}
